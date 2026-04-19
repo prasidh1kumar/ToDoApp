@@ -10,6 +10,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
+
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -21,6 +23,12 @@ public class Todo {
     private Long id;
 
     private String title;
+    private String description;
     private boolean completed;
+    private String priority; // LOW, MEDIUM, HIGH
+    private String category;
+    private LocalDateTime dueDate;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
 
 }
